@@ -9,6 +9,7 @@ const Tasks = ({ data, name, fetchTodos, next, previous, card, color }) => {
         {data?.map((todo) => (
           <TodoCard
             todo={todo}
+            key={todo._id}
             className={`${color}  ${card}`}
             next={next}
             previous={previous}

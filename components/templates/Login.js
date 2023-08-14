@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { signIn, useSession } from "next-auth/react";
 import { toast } from "react-hot-toast";
-const login = () => {
+const Login = () => {
   const { status } = useSession();
   useEffect(() => {
     if (status === "authenticated") router.replace("/");
@@ -74,4 +74,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
