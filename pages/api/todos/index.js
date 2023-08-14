@@ -24,7 +24,7 @@ async function handler(req, res) {
   if (!user) {
     return res
       .status(404)
-      .json({ status: "failed", message: "User doesn't exsit!" });
+      .json({ status: "failed", message: "User doesn't exist!" });
   }
 
   if (req.method === "POST") {
