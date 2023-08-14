@@ -39,7 +39,7 @@ const Login = () => {
           Log Into Your Account
         </h2>
         <p>
-          Don't have an Account?{" "}
+          Don&apos;t have an Account?{" "}
           <Link href={"/signup"} className="underline text-[#5142FF]">
             Sign Up
           </Link>{" "}

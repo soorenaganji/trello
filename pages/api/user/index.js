@@ -1,4 +1,4 @@
-import { verifyToken } from "@/pages/api/auth/login";
+import { verifyToken } from "@/utils/auth";
 export default async function handler(req, res) {
   if (req.method !== "GET") {
     return;

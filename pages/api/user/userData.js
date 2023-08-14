@@ -1,6 +1,6 @@
 import User from "@/models/user";
 import connectDB from "@/utils/connectDB";
-import { verifyToken } from "../auth/login";
+import { verifyToken } from "@/utils/auth";
 export default async function handler(req, res) {
   if (req.method !== "GET") {
     return;
