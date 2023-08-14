@@ -10,12 +10,22 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "cookie": "^0.5.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
+    "icons": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mo": "^1.7.3",
+    "mongoose": "^7.2.4",
     "next": "13.4.5",
+    "next-auth": "^4.19.2",
     "postcss": "8.4.24",
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.9.0",
     "tailwindcss": "3.3.2"
   }
 }
