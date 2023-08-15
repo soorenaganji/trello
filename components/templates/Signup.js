@@ -56,10 +56,10 @@ const Signup = () => {
     } else if (Object.keys(errors).length == 0) {
       const res = await createUser(finalUserData);
       if (!res.error) {
-        toast.success(res.data.data.message);
+        toast.success("You Signed Up Successfully");
         router.push("/login");
       } else {
-        toast.error(res.data.data.message);
+        toast.error(res.data.message);
       }
     }
   };
