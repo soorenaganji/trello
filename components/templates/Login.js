@@ -25,11 +25,12 @@ const Login = () => {
       password: data.password,
       redirect: false,
     });
+    console.log(res);
     if (!res.error) {
       router.push("/");
       toast.success("You Logged In successfully");
     } else {
-      toast.error(res.data.message);
+      toast.error(res.error);
     }
   };
   return (

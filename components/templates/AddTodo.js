@@ -22,8 +22,7 @@ const AddTodo = () => {
     <>
       <div className="w-full h-full py-4 px-4 lg:px-32 ">
         <h2 className="lg:text-5xl text-2xl font-bold"> Add New Todo </h2>
-        <div>
-          <div className="flex items-start"></div>
+        <div className="flex items-start flex-col gap-16">
           <div>
             <label className="block lg:text-2xl font-semibold mt-8 ">
               Title :
@@ -85,23 +84,9 @@ const AddTodo = () => {
               />
             </div>
           </div>
-          <div>
-            {" "}
-            <label className="block lg:text-2xl font-semibold mt-8 ">
-              Description :
-            </label>
-            <textarea
-              onChange={textChangeHandler}
-              value={todo.description}
-              type="text"
-              name={"description"}
-              className="outline-none p-3 w-full mt-4 h-36 rounded-lg transition-all duration-200 focus:shadow-lg border-slate-300 focus:border-indigo-400 border resize-none"
-              placeholder="Enter Your Todo Description"
-            />
-          </div>
         </div>
         <button
-          className="px-16 py-4 bg-indigo-500 rounded-xl sm:mx-auto text-xl text-white mt-12 "
+          className="px-16 py-4 bg-indigo-500 rounded-xl sm:mx-auto text-xl text-white mt-32 "
           onClick={addTodo}
         >
           Submit

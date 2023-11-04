@@ -44,7 +44,7 @@ const UserProfile = () => {
                 name="name"
                 id=""
                 value={userData.name}
-                className="p-2 border border-indigo-400 shadow-md text-sm rounded-md outline-none"
+                className="p-2 border border-indigo-400 shadow-md text-xs lg:text-sm rounded-md w-36 outline-none"
               />
             </p>
             <p>
@@ -55,7 +55,7 @@ const UserProfile = () => {
                 name="lastName"
                 id=""
                 value={userData.lastName}
-                className="p-2 border border-indigo-400 shadow-md text-sm rounded-md outline-none"
+                className="p-2 border border-indigo-400 shadow-md text-xs lg:text-sm rounded-md w-36 outline-none"
               />
             </p>
             <p>
@@ -66,7 +66,7 @@ const UserProfile = () => {
                 name="email"
                 id=""
                 value={userData.email}
-                className=" p-2 border w-56  border-indigo-400 shadow-md text-sm rounded-md outline-none"
+                className=" p-2 border w-36   border-indigo-400 shadow-md text-xs lg:text-sm lg:w-56 rounded-md outline-none "
               />
             </p>
             <button

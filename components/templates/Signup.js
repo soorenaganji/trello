@@ -54,12 +54,14 @@ const Signup = () => {
         Password2: true,
       });
     } else if (Object.keys(errors).length == 0) {
-      const res = await createUser(finalUserData);
-      if (!res.error) {
+      try {
+        const res = await createUser(finalUserData);
+        console.log(res);
         toast.success("You Signed Up Successfully");
         router.push("/login");
-      } else {
-        toast.error(res.data.message);
+      } catch (err) {
+        console.log(err);
+        toast.error(err.response.data.message);
       }
     }
   };
@@ -166,6 +168,7 @@ const Signup = () => {
             </p>
           </div>
           <button
+            type="submit"
             className={` w-80 lg:w-96 h-14 text-lg p-2 bg-[#5142FF] text-white rounded-lg hover:shadow-lg transition-all duration-400 hover:shadow-[#685aff96] ${
               Object.keys(errors).length ? "bg-[#7265ff9a]" : "bg-[#675aff]"
             }  `}

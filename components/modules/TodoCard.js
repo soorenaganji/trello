@@ -12,8 +12,9 @@ const TodoCard = ({ todo, className, next, previous, fetchTodos }) => {
     const res = await deleteTodo(todo?._id);
     if (res.status == 200) {
       toast.success("Todo Deleted Successfully");
-    }if(res.status === 404) {
-      toast.error("Todo Doesn't Exist")
+    }
+    if (res.status === 404) {
+      toast.error("Todo Doesn't Exist");
     }
     fetchTodos();
   };
@@ -47,10 +48,10 @@ const TodoCard = ({ todo, className, next, previous, fetchTodos }) => {
                 placeholder="Enter todo"
                 value={titleOnEdit}
                 onChange={titleChangeHandler}
-                className="p-2 border border-indigo-400 shadow-md text-sm rounded-md outline-none"
+                className="p-2 border border-indigo-400 shadow-md text-sm w-fit rounded-md outline-none"
               />
               <button
-                className="p-2 text-white bg-indigo-600 rounded-md"
+                className="p-2 text-white w-8 bg-indigo-600 rounded-md"
                 onClick={editTodo}
                 type="submit"
               >
